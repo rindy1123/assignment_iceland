@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Judson:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --base-color: #121317;
+  --logo-color: #40454d;
+  --primary-color: #ffffff;
+  --secondary-color: #adadad;
+  --nav-text-color: #828b9a;
+  --horizontal-line-color: #4a4a4a;
+
+  --header-font: "Judson", serif;
+  --base-font: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--primary-color);
+}
+
+h1,
+h2 {
+  font-family: var(--header-font);
+}
+
+.iceland .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: transparent;
+  padding: 28px 88px;
+  position: absolute;
+}
+
+.iceland .container .logo {
+  color: var(--logo-color);
+  font-size: 32px;
+}
+
+.iceland .container .items {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  list-style-type: none;
+}
+
+.iceland .container a {
+  text-decoration: none;
+  color: var(--nav-text-color);
+  font-size: 20px;
+}
+
+.iceland .bg-img {
+  background: var(--base-color) url(images/banner.png) no-repeat center/cover;
+  height: 1084px;
+}
+
+.iceland .title {
+  position: absolute;
+  right: 200px;
+  top: 260px;
+}
+
+.iceland h1 {
+  color: var(--base-color);
+  font-size: 90px;
+  font-family: var(--header-font);
+}
+.iceland .gray-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.iceland .border {
+  background-color: var(--nav-text-color);
+  width: 50px;
+  height: 1px;
+}
+
+.iceland h2 {
+  color: var(--nav-text-color);
+  font-family: var(--header-font);
+  font-size: 20px;
+}
+
+.detail {
+  background-color: var(--base-color);
+}
+
+.detail .article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 850px;
+  padding: 60px 0 180px 0;
+  gap: 32px;
+  margin: 0 auto;
+}
+
+.detail h2 {
+  color: var(--secondary-color);
+}
+
+.detail h1 {
+  font-size: 60px;
+}
+
+.detail p {
+  font-family: var(--base-font);
+  font-size: 16px;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.excursions {
+  display: flex;
+  background-color: var(--base-color);
+  padding: 0 0 90px 0;
+}
+
+.excursions .plane-img {
+  background: url(images/plane-wreck.jpg) no-repeat top/cover;
+  width: 60%;
+}
+
+.excursions .box {
+  position: relative;
+  top: 150px;
+  right: 30px;
+  height: 40px;
+  width: 70px;
+  background-color: var(--secondary-color);
+}
+
+.excursions .ranking {
+  display: flex;
+  flex-direction: column;
+}
+
+.excursions h2 {
+  color: var(--secondary-color);
+}
+
+.excursions ol {
+  display: flex;
+  flex-direction: column;
+}
+
+.excursions li {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  border-bottom: 2px solid var(--secondary-color);
+  padding: 20px;
+}
+
+.excursions span {
+  white-space: pre;
+  font-size: 50px;
+}
+
+.jewel {
+  background-color: var(--base-color);
+}
+
+.jewel .jewel-container {
+  display: flex;
+  justify-content: center;
+  padding: 90px 0;
+  margin: 0 0 0 90px;
+  gap: 90px;
+}
+
+.jewel .article {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 90px 0;
+  flex: 1;
+  gap: 30px;
+}
+
+.jewel h1 {
+  font-size: 50px;
+}
+
+.jewel h2 {
+  color: var(--secondary-color);
+}
+
+.jewel p {
+  line-height: 1.8rem;
+}
+
+.jewel .btn {
+  all: unset;
+  border: 1px solid var(--secondary-color);
+  cursor: pointer;
+  padding: 10px;
+  color: var(--secondary-color);
+}
+
+.jewel .img {
+  background: url(images/earth.png) no-repeat left/cover;
+  flex: 1;
+}
+
+.gallery {
+  background-color: var(--base-color);
+  background: #1e1e1e url(images/aurora.png) no-repeat center/cover;
+}
+
+.gallery .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 180px 90px;
+  width: 50%;
+  gap: 30px;
+}
+
+.gallery h1 {
+  font-size: 50px;
+}
+
+.gallery h2 {
+  color: var(--secondary-color);
+}
+
+.gallery p {
+  line-height: 1.8rem;
+  font-size: 20px;
+}
+
+.gallery .btn {
+  all: unset;
+  cursor: pointer;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: var(--base-color);
+  border-top: 2px solid var(--horizontal-line-color);
+}
+
+.footer .items {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.footer p {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
